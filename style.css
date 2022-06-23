@@ -1,0 +1,119 @@
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to left, rgb(114, 91, 227), rgb(228, 226, 81));
+  text-align: center;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+ 
+.container{
+  padding: 30px 40px;
+}
+ 
+/* Style the tab */
+.tab {
+  float: left;
+  width: 20%;
+  height: 300px;
+  margin-top: -12px;
+}
+ 
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  color: black;
+  padding: 18px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  font-size: 17px;
+  margin: 15px;
+}
+ 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(91, 161, 227);
+ 
+}
+ 
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(88, 88, 88);
+  color: white;
+}
+ 
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid rgb(88, 88, 88);
+  background: whitesmoke;
+  width: 70%;
+  height: 100%;
+  margin-left: 40px;
+  animation: blinker 0.6s linear;
+}
+ 
+/* animation effects */
+@keyframes blinker {  
+    10% { opacity: 0; } 
+    100% { opacity: 1; }
+}
+ 
+.tab .arrow {
+  color: rgb(88, 88, 88);
+  float: right;
+  font-size: 26px;
+  position: relative;
+  left: 25px;
+}
+img {
+  height: 25em;
+  width: 50em;
+  object-fit: contain;
+ }
+ 
+ .wrapper {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+
+.search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  width: 12px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.search:hover, .search:focus {
+  border: 1px solid #009688;
+  background-color: white;
+}
+
+
+
+

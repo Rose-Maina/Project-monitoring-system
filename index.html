@@ -1,55 +1,93 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>FlataBeer</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    <script defer type="text/javascript" src="src/index.js"></script>
-  </head>
+    <title>Contractors' Progress Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
   <body>
     <header>
-      <h1>FlataBeer</h1>
+      <h1>Public Infrastructure Monitoring System</h1>
       <nav>
-        <ul id="beer-list">
-          <li>Beer Name</li>
-          <li>Another Beer Name</li>
-          <li>And Another Beer Name</li>
-        </ul>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'cancerResearchInstitute', 'arrow1')" id="defaultOpen">
+                <i class="fab fa-cancerResearchInstitute"></i>
+                 Cancer_Research_Institute
+                 <span id="arrow1" class="arrow fas fa-caret-right"></span>
+                </button>
+               
+              <button class="tablinks" onclick="openTab(event, 'sCMImplementationProject', 'arrow2')">
+                <i class="fab fa-sCMImplementationProject"></i>
+                SCM_Implementation_Project <span id="arrow2" class=" arrow fas fa-caret-right"></span>
+              </button>
+           
+              <button class="tablinks" onclick="openTab(event, 'digitalSystemsDeployment', 'arrow3')">
+                <i class="fas fa-digitalSystemsDeployment"></i>
+                Digital_Systems_Deployment <span id="arrow3" class=" arrow fas fa-caret-right"></span>
+              </button>
+           
+              <button class="tablinks" onclick="openTab(event, 'ngongStadium', 'arrow4')">
+                <i class="far fa-ngongStadium"></i>
+                Ngong_Stadium<span id="arrow4" class=" arrow fas fa-caret-right"></span>
+              </button>
+        </div>
+        <div id="cancerResearchInstitute" class="tabcontent">
+            <h3>Progress Details On The Upcoming Cancer Research Institute</h3>
+            <img src = "assets/cancer-institute.jpg" alt="The Project's Goal"/>
+          </div>
+           
+          <div id="sCMImplementationProject" class="tabcontent">
+            <h3> Progress Details On SCM_Implementation</h3>
+            <img src = "assets/electric-transit.jpg" alt="The Project's Goal"/>
+          </div>
+           
+          <div id="digitalSystemsDeployment" class="tabcontent">
+            <h3>Progress Details On The Ongoing Deployment of Digital Systems</h3>
+            <img src = "assets/studentswithlaptops.png" alt="The Project's Goal"/>
+          </div>
+          <div id="ngongStadium" class="tabcontent">
+            <h3>Current Progress On The Upcoming Ngong Stadium</h3>
+            <img src = "assets/modern-stadium.jpg" alt="The Project's Goal"/>
+          </div>
+  
+          <div class="Project-details">
+            
+          </div>
       </nav>
     </header>
+    <div class="wrapper">
+      <input placeholder="Search"
+             type="text" 
+             class="search">
+    </div>    
+    
+    <script>
+        function openTab(evt, Services, arrows) {
+            var i, tabcontent, tablinks, tabArrow;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tabArrow = document.getElementsByClassName("arrow");
+            for (i = 0; i < tabArrow.length; i++) {
+                tabArrow[i].style.display = "none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(arrows).style.display = "block";
+            document.getElementById(Services).style.display = "block";
+            evt.currentTarget.className += " active";
+            
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
 
-    <main>
-      <div class="beer-details">
-        <h2 id="beer-name">Beer Name Goes Here</h2>
-        <img
-          id="beer-image"
-          alt="Beer Name Goes Here"
-          src="assets/image-placeholder.jpg"
-        />
-        <p>
-          <em id="beer-description">Beer Description Goes Here</em>
-        </p>
-
-        <form id="description-form">
-          <label for="description">Edited Description:</label>
-          <textarea id="description"></textarea>
-          <button type="submit">Update Beer</button>
-        </form>
-
-        <h3>Customer Reviews</h3>
-        <ul id="review-list">
-          <li>Replace with actual reviews</li>
-          <li>From the server</li>
-        </ul>
-        <form id="review-form">
-          <label for="review">Your Review:</label>
-          <textarea id="review"></textarea>
-          <button type="submit">Add review</button>
-        </form>
-      </div>
-    </main>
+    </script>
   </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>

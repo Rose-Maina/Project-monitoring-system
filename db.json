@@ -3,7 +3,7 @@
         {
         "id": 1,
         "ProjectId" : 72419098,
-        "ProjectName" : "HCM_Implementation_Proj",
+        "ProjectName" : "Research-Institute",
         "ProgressAsOfDate" : "2015-12-05",
         "PublicationStatus" : "DRAFT",
         "CurrentActualAmountsDate" : "2015-11-05",
@@ -13,7 +13,7 @@
         "ProjectCurrency" : "USD",
         "ProjectRawActualCost" : 6500,
         "ProjectBurdenedActualCost" : 8910.25,
-        "ProgressStatusCodeLOV" : [ {
+        "ProgressStatusCode" : [ {
         "ProgressStatusCode" : "PROGRESS_STAT_ON_TRACK",
         "ProgressStatus" : "On Track"
         } ]
@@ -21,7 +21,7 @@
         {
         "id": 2,
         "ProjectId" : 72419099,
-        "ProjectName" : "SCM_Implementation_Proj",
+        "ProjectName" : "SCM_Implementation_Project",
         "ProgressAsOfDate" : "2015-11-09",
         "PublicationStatus" : "DRAFT",
         "PlannedStartDate" : "2015-08-01",
@@ -30,7 +30,7 @@
         "ProjectCurrency" : "USD",
         "ProjectRawActualCost" : 5500,
         "ProjectBurdenedActualCost" : 8910.25,
-        "ProgressStatusCodeLOV" : [ {
+        "ProgressStatusCode" : [ {
         "ProgressStatusCode" : "PROGRESS_STAT_ON_TRACK",
         "ProgressStatus" : "On Track"
         } ]
@@ -39,7 +39,7 @@
         {
         "id": 3,
         "ProjectId": 100010024530806,
-        "ProjectName": "Digital Systems Deployment D7",
+        "ProjectName": "Digital Systems Deployment",
         "ProjectNumber": "IMP-TMPP-D7-991",
         "ProgressAsOfDate": "2012-08-23",
         "PublicationStatus": "LATEST_PUBLISHED",
@@ -48,7 +48,7 @@
         "ActualStartDate" : null,
         "PercentComplete": 30,
         "ProjectCurrency": "USD",
-        "ProgressStatusCodeLOV" : [ {
+        "ProgressStatusCode" : [ {
         "ProgressStatusCode": null,
         "ProgressStatus": null
         } ]
@@ -57,7 +57,7 @@
         {
         "id": 4,
         "ProjectId": 1000567834526,
-        "ProjectName": "Ngong Olympics Implementation D7",
+        "ProjectName": "Ngong Stadium D7",
         "ProgressAsOfDate": "2012-08-22",
         "PublicationStatus": "LATEST_PUBLISHED",
         "PlannedStartDate": "2008-07-01",
@@ -66,8 +66,10 @@
         "ProjectCurrency": "USD",
         "ProjectRawActualCost": null,
         "ProjectBurdenedActualCost": null,
-        "ProgressStatusCode": null,
-        "ProgressStatus": null
+        "ProgressStatusCode" : [ {
+            "ProgressStatusCode": null,
+            "ProgressStatus": null
+            } ]
         }
     ]
 }
