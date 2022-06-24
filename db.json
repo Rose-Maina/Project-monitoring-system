@@ -1,79 +1,95 @@
-{
-	"items": [
-        {
+[
+    {
         "id": 1,
-        "ProjectId" : 72419098,
-        "ProjectName" : "Research-Institute",
-        "ProgressAsOfDate" : "2015-12-05",
-        "PublicationStatus" : "DRAFT",
-        "CurrentActualAmountsDate" : "2015-11-05",
-        "PlannedStartDate" : "2015-08-01",
-        "PlannedFinishDate" : "2015-12-30",
-        "ActualStartDate" : "2015-08-01",
-        "ProjectCurrency" : "USD",
-        "ProjectRawActualCost" : 6500,
-        "ProjectBurdenedActualCost" : 8910.25,
-        "ProgressStatusCode" : [ {
-        "ProgressStatusCode" : "PROGRESS_STAT_ON_TRACK",
-        "ProgressStatus" : "On Track"
-        } ]
-        },    
-        {
+        "ProjectId": 72419098,
+        "ProjectName": "HCM_Implementation_Proj",
+        "ProgressAsOfDate": "2015-12-05",
+        "ProgressAsOfPeriod": "Dec-15",
+        "ActualAmountsThroughPeriod": "Nov-15",
+        "ActualAmountsDate": "2015-11-05",
+        "PublicationStatus": "DRAFT",
+        "CurrentActualAmountsDate": "2015-11-05",
+        "PlannedStartDate": "2015-08-01",
+        "PlannedFinishDate": "2015-12-30",
+        "EstimatedStartDate": "2015-08-01",
+        "EstimatedFinishDate": "2015-12-30",
+        "ActualStartDate": "2015-08-01",
+        "ProjectCurrency": "USD",
+        "ProjectRawActualCost": 6500,
+        "ProjectBurdenedActualCost": 8910.25,
+        "ProgressStatusCodeLOV": [
+            {
+                "ProgressStatusCode": "PROGRESS_STAT_ON_TRACK",
+                "ProgressStatus": "On Track"
+            }
+        ]
+    },
+    {
         "id": 2,
-        "ProjectId" : 72419099,
-        "ProjectName" : "SCM_Implementation_Project",
-        "ProgressAsOfDate" : "2015-11-09",
-        "PublicationStatus" : "DRAFT",
-        "PlannedStartDate" : "2015-08-01",
-        "PlannedFinishDate" : "2015-12-30",
-        "ActualStartDate" : "2015-08-01",
-        "ProjectCurrency" : "USD",
-        "ProjectRawActualCost" : 5500,
-        "ProjectBurdenedActualCost" : 8910.25,
-        "ProgressStatusCode" : [ {
-        "ProgressStatusCode" : "PROGRESS_STAT_ON_TRACK",
-        "ProgressStatus" : "On Track"
-        } ]
-        },
-
-        {
+        "ProjectId": 72419099,
+        "ProjectName": "SCM_Implementation_Proj",
+        "ProgressAsOfDate": "2015-11-09",
+        "ProgressAsOfPeriod": "Dec-15",
+        "ActualAmountsThroughPeriod": "Nov-15",
+        "ActualAmountsDate": "2015-11-09",
+        "PublicationStatus": "DRAFT",
+        "CurrentActualAmountsDate": "2015-11-09",
+        "PlannedStartDate": "2015-08-01",
+        "PlannedFinishDate": "2015-12-30",
+        "EstimatedStartDate": "2015-08-01",
+        "EstimatedFinishDate": "2015-12-30",
+        "ActualStartDate": "2015-08-01",
+        "ProjectCurrency": "USD",
+        "ProjectRawActualCost": 5500,
+        "ProjectBurdenedActualCost": 8910.25,
+        "ProgressStatusCodeLOV": [
+            {
+                "ProgressStatusCode": "PROGRESS_STAT_ON_TRACK",
+                "ProgressStatus": "On Track"
+            }
+        ]
+    },
+    {
         "id": 3,
         "ProjectId": 100010024530806,
-        "ProjectName": "Digital Systems Deployment",
+        "ProjectName": "Digital Systems Deployment D7",
         "ProjectNumber": "IMP-TMPP-D7-991",
         "ProgressAsOfDate": "2012-08-23",
+        "ProgressAsOfPeriod": "May-10",
+        "ActualAmountsThroughPeriod": "May-10",
         "PublicationStatus": "LATEST_PUBLISHED",
+        "CurrentActualAmountsDate": "2020-09-08",
         "PlannedStartDate": "2008-07-01",
-        "PlannedFinishDate": "2009-06-30",
-        "ActualStartDate" : null,
+        "BaselineStartDate": "2008-07-01",
+        "EstimatedFinishDate": "2009-06-30",
         "PercentComplete": 30,
         "ProjectCurrency": "USD",
-        "ProgressStatusCode" : [ {
+        "ProjectLedgerCurrency": "USD",
+        "ProjectLedgerRawActualCost": null,
+        "ProjectLedgerBurdenedActualCost": null,
         "ProgressStatusCode": null,
         "ProgressStatus": null
-        } ]
-        },
-
-        {
+    },
+    {
         "id": 4,
         "ProjectId": 1000567834526,
-        "ProjectName": "Ngong Stadium D7",
+        "ProjectName": "Kasarani Olympics Implementation D7",
         "ProgressAsOfDate": "2012-08-22",
+        "ProgressAsOfPeriod": "May-10",
+        "ActualAmountsThroughPeriod": "May-10",
+        "ActualAmountsDate": null,
         "PublicationStatus": "LATEST_PUBLISHED",
+        "CurrentActualAmountsPeriod": null,
+        "CurrentActualAmountsDate": "2020-09-08",
         "PlannedStartDate": "2008-07-01",
         "PlannedFinishDate": null,
+        "EstimatedStartDate": null,
+        "EstimatedFinishDate": "2009-06-30",
         "ActualStartDate": null,
         "ProjectCurrency": "USD",
         "ProjectRawActualCost": null,
         "ProjectBurdenedActualCost": null,
-        "ProgressStatusCode" : [ {
-            "ProgressStatusCode": null,
-            "ProgressStatus": null
-            } ]
-        }
-    ]
-}
-
-                
-        
-
+        "ProgressStatusCode": null,
+        "ProgressStatus": null
+    }
+]

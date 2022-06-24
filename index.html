@@ -6,7 +6,7 @@
 </head>
   <body>
     <header>
-      <h1>Public Infrastructure Monitoring System</h1>
+      <h1>PUBLIC INFRASTRUCTURE MONITORING SYSTEM</h1>
       <nav>
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'cancerResearchInstitute', 'arrow1')" id="defaultOpen">
@@ -17,7 +17,7 @@
                
               <button class="tablinks" onclick="openTab(event, 'sCMImplementationProject', 'arrow2')">
                 <i class="fab fa-sCMImplementationProject"></i>
-                SCM_Implementation_Project <span id="arrow2" class=" arrow fas fa-caret-right"></span>
+                SCM_Implementation_Proj <span id="arrow2" class=" arrow fas fa-caret-right"></span>
               </button>
            
               <button class="tablinks" onclick="openTab(event, 'digitalSystemsDeployment', 'arrow3')">
@@ -47,19 +47,30 @@
           <div id="ngongStadium" class="tabcontent">
             <h3>Current Progress On The Upcoming Ngong Stadium</h3>
             <img src = "assets/modern-stadium.jpg" alt="The Project's Goal"/>
+            <p>
+              Rose
+            </p>
           </div>
   
-          <div class="Project-details">
+          <div class="Projectdetails">
             
           </div>
       </nav>
     </header>
     <div class="wrapper">
-      <input placeholder="Search"
-             type="text" 
-             class="search">
+      <label for="searchInput"> <i class="fa fa-search"></i> </label>
+      <input type = "text" id = "searchBar" oninput = "Search((this.value).toLowerCase())" placeholder = "Search...">
     </div>    
-    
+    <form id="comment-form" class="comment-form">
+      <input
+        class="comment-input"
+        type="text"
+        name="comment"
+        id="comment"
+        placeholder="Add a comment..."
+      />
+      <button class="comment-button" type="submit">Post</button>
+    </form>
     <script>
         function openTab(evt, Services, arrows) {
             var i, tabcontent, tablinks, tabArrow;
