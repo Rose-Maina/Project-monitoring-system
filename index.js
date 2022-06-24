@@ -1,6 +1,7 @@
 
+
 let ongoingProjects = () => {
-    const url = "https://fierce-forest-94320.herokuapp.com/items";
+  const url = "https://fierce-forest-94320.herokuapp.com/items";
     fetch(url)
       .then((res) => res.json())
       .then((projectData) => {
@@ -9,10 +10,29 @@ let ongoingProjects = () => {
         })
       .catch((error) => console.log(error));
     };
-  let initialize = () => {
-    ongoingProjects(); 
-  };
-  initialize();
+
+    let initialize = () => {
+      ongoingProjects();
+      projectData(); 
+    };
+    initialize();
+
+function projectData() {
+  fetch("https://fierce-forest-94320.herokuapp.com/items/projectId")
+  .then((data) => data.json())
+  .then((data) => {
+    const ul = document.getElementById("research")
+    ul.innerText = data.ProjectId;
+    console.log(data)
+  })
+}
+projectData()
+
+  // async function loadIntoTable (url, table) {
+
+  // }
+
+  // loadIntoData("./data.json", document.querySelector("table));
 
   function Search(item){
     var collection = document.getElementsByClassName("wrapper");
@@ -23,21 +43,5 @@ let ongoingProjects = () => {
                 collection[i].style.display = "none";
                 }
     }
-}
-function projectData() {
-  fetch("https://fierce-forest-94320.herokuapp.com/items")
-    .then((res) => res.json())
-    .then((projectData) => {
-      const ul = document.getElementById("projectDetails");
-      ul.innerHTML = "";
-      for (const item of projectdata) {
-        console.log();
-        let li = document.createElement("li");
-        li.appendChild(document.createTextNode(item.name));
-        li.id = item.id;
-        li.setAttribute("onclick","beerClick("+item.id+")")
-        ul.appendChild(li);
-      }
-    })
-    .catch((error) => console.warn(error));
-}
+};
+
