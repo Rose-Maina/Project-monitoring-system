@@ -16,16 +16,16 @@
 //     initialize();
 
 function projectData() {
-  fetch("https://fierce-forest-94320.herokuapp.com/items")
+  fetch("https://fierce-forest-94320.herokuapp.com/items/1")
   .then((data) => data.json())
   .then((data) => {
-    for (const item in data) {
-      const ul = document.querySelectorAll("tabcontent")
-      ul.innerHTML = data.item
-    console.log(`${item}: ${data[item]}`);    }
-  }
-)
-}
+   for(const item of data) {
+    const ul = document.getElementById("research")
+    ul.innerText = data.ProjectId; " "
+    }
+      console.log(projectId)
+    })
+    }
 projectData()
     
   function Search(item){
