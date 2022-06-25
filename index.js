@@ -15,18 +15,22 @@
 //     };
 //     initialize();
 
-function projectData() {
-  fetch("https://fierce-forest-94320.herokuapp.com/items/1")
+// function researchInfo() {
+  fetch("https://fierce-forest-94320.herokuapp.com/items")
   .then((data) => data.json())
-  .then((data) => {
-   for(const item of data) {
-    const ul = document.getElementById("research")
-    ul.innerText = data.ProjectId; " "
+  .then((completeResearchData) => {
+      //console.log(data1[0]);
+      let data1=+" "
+      completeResearchData.map((values) => {
+        data1 = `<div class="researchData">
+        <h1 class="ProjectName">${values.ProjectName}</h1>
+        <p class="ProgressAsOfDate">${values.ProgressAsOfDate}</p>
+        <p class="PublicationStatus">${values.PublicationStatus}</p>
+      </div>`
+      });
+      document.getElementById("research").innerHTML=data1;
     }
-      console.log(projectId)
-    })
-    }
-projectData()
+  )
     
   function Search(item){
     var collection = document.getElementsByClassName("wrapper");
