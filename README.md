@@ -4,11 +4,15 @@ Public infrastructure Monitoring System
 # Author's Name: 
 Rose Maina
 # Description of the Project
-This project focussed on providing users with com[rehensive information on various public infrasructure projects. The aim of the site is to provide every user with an understanding of the projects in terms of their aims, the planned start and finsih dates, the current project status, and a comparison of the budget and actual costs used in the projects.
+This project focussed on providing users with comprehensive information on various public infrasructure projects. The aim of the site is to provide every user with an understanding of the projects in terms of their aims, the planned start and finsih dates, the current project status, and a comparison of the budget and actual costs used in the projects.
+
 # Project Setup 
+
 Developing the project entailed writing code using three main languages, HTML, CSS and Javascript. The HTML code represented by the index.html file depicted a simplified structure and format of the webpage. this includes the headers, paragraphs and the navigation bars. The CSS language was used in styling the webpage such that the site has a strong appeal to its users. The Javascript code represented by the index.js file was used in making the site functional. A user is allowed to visit the site, read and search for particular information and even include their comments on the projects they were interested in. 
+
 # The Link to the live site on GitHub Pages 
-https://github.com/Rose-Maina/Project-monitoring-system
+
+https://rose-maina.github.io/Project-monitoring-system/
 
 # Copyright and License Information
 MIT License
