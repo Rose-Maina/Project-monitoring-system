@@ -9,52 +9,30 @@
       <h1>PUBLIC INFRASTRUCTURE MONITORING SYSTEM</h1>
       <nav>
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'cancerResearchInstitute', 'arrow1')" id="defaultOpen">
+                <button class="tablinks" onclick="openTab(event, 'kasaraniStadium', 'arrow4')">
+                  <i class="far fa-kasaraniStadium"></i>
+                  Kasarani_Stadium<span id="arrow4" class=" arrow fas fa-caret-right"></span>
+                </button>
+          
+              <button class="tablinks" onclick="openTab(event, 'cancerResearchInstitute', 'arrow1')" id="defaultOpen">
                 <i class="fab fa-cancerResearchInstitute"></i>
                  Cancer_Research_Institute
                  <span id="arrow1" class="arrow fas fa-caret-right"></span>
                 </button>
-               
-              <button class="tablinks" onclick="openTab(event, 'sCMImplementationProject', 'arrow2')">
-                <i class="fab fa-sCMImplementationProject"></i>
-                SCM_Implementation_Proj <span id="arrow2" class=" arrow fas fa-caret-right"></span>
-              </button>
-           
-              <button class="tablinks" onclick="openTab(event, 'digitalSystemsDeployment', 'arrow3')">
-                <i class="fas fa-digitalSystemsDeployment"></i>
-                Digital_Systems_Deployment <span id="arrow3" class=" arrow fas fa-caret-right"></span>
-              </button>
-           
-              <button class="tablinks" onclick="openTab(event, 'kasaraniStadium', 'arrow4')">
-                <i class="far fa-kasaraniStadium"></i>
-                Kasarani_Stadium<span id="arrow4" class=" arrow fas fa-caret-right"></span>
-              </button>
         </div>
-          <div id="cancerResearchInstitute" class="tabcontent">
-            <h3>Progress Details On The Upcoming Cancer Research Institute</h3>
-            <img src = "assets/cancer-institute.jpg" alt="The Project's Goal"/>
-            <div id="research">
-              <!-- <div class="researchData">
-                <h1 class="title">Project Name</h1>
-                <p class="projectInfo1"></p>
-              </div> -->
-            </div>
-          </div>
-
-          <div id="sCMImplementationProject" class="tabcontent">
-            <h3> Progress Details On SCM_Implementation</h3>
-            <img src = "assets/electric-transit.jpg" alt="The Project's Goal"/>
-          </div>
-           
-          <div id="digitalSystemsDeployment" class="tabcontent">
-            <h3>Progress Details On The Ongoing Deployment of Digital Systems</h3>
-            <img src = "assets/studentswithlaptops.png" alt="The Project's Goal"/>
-          </div>
           <div id="kasaraniStadium" class="tabcontent">
             <h3>Current Progress On The Upcoming Kasarani Stadium</h3>
             <img src = "assets/modern-stadium.jpg" alt="The Project's Goal"/>
-          
+            <div id="stadium">
+              </div> 
+            </div>
+    
+          <div id="cancerResearchInstitute" class="tabcontent">
+            <h3>Progress Details On The Upcoming Cancer Research Institute</h3>
+            <img src = "assets/cancer-institute.jpg" alt="The Project's Goal"/>
+              <div id = "research"></div>
           </div>
+        </div>
       </nav>
     </header>
    <div>
