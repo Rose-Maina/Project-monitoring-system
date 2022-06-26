@@ -29,6 +29,13 @@ fetch("https://fierce-forest-94320.herokuapp.com/items")
     }
   )
 
+const icon = document.querySelector('.icon');
+const search = document.querySelector('.search');
+icon.onlick = function() {
+  search.classList.toggle('active');
+}
+
+  
 const form =document.getElementById("description-form")
  form.onsubmit=handleReview
  function handleReview(event){
