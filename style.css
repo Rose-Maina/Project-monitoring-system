@@ -88,7 +88,7 @@ img {
  }
 
  .search .icon {
-  position: absolute;
+  position: relative;
   top: 0px;
   bottom: 0px;
   width: 60px;
@@ -98,7 +98,7 @@ img {
   display: flexbox;
   justify-content: center;
   align-items: center;
-  z-index: 1000;;
+  z-index: 100;;
   cursor: pointer;
  }
 
@@ -141,38 +141,6 @@ img {
   padding: 10px 0;
  }
 
-.clear {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  right: 15px;
-  background: yellowgreen;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.clear::before {
-  position: absolute;
-  content: '';
-  width: 1px;
-  height: 15px;
-  background: gray;
-  transform: rotate(45deg);
-}
-
-.clear::after{
-  position: absolute;
-  content: '';
-  width: 1px;
-  height: 15px;
-  background: gray;
-  transform: rotate(315deg);
-  
-}
 
 form {
   width: 450px;
