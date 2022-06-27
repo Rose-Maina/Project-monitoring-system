@@ -75,7 +75,7 @@ img {
 
  .search {
   position: relative;
-  width: 360px;
+  width: 60px;
   height: 60px;
   background-color: #f1a458;
   border-radius: 60px;
@@ -84,7 +84,7 @@ img {
   overflow: hidden
  }
  .search.active {
-  width: 360px;
+  width: 60px;
  }
 
  .search .icon {
@@ -146,7 +146,32 @@ img {
   top: 50%;
   transform: translateY(-50%);
   width: 15px;
-  height: ;
+  height: 15px;
+  right: 15px;
+  background: yellowgreen;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: gray;
+  transform: rotate(45deg);
+}
+
+.clear::after{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: gray;
+  transform: rotate(315deg);
+  
 }
 
 form {
