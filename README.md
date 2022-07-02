@@ -1,6 +1,6 @@
 # PROJECT-MONITORING-SYSTEM
 # Application Name: 
-Public infrastructure Monitoring System
+A Public Infrastructure Monitoring System
 # Author's Name: 
 Rose Maina
 # Description of the Project
