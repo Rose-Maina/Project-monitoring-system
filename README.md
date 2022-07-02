@@ -1,6 +1,6 @@
 # PROJECT-MONITORING-SYSTEM
 # Application Name: 
-Public infrastructure Monitoring System
+A Public Infrastructure Monitoring System
 # Author's Name: 
 Rose Maina
 # Description of the Project
@@ -18,6 +18,7 @@ https://rose-maina.github.io/Project-monitoring-system/
 MIT License
 
 Copyright (c) [2022] [Rose-Maina] [https://fierce-forest-94320.herokuapp.com/items]
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
