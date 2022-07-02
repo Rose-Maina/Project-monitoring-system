@@ -6,9 +6,52 @@ Rose Maina
 # Description of the Project
 This project focussed on providing users with comprehensive information on various public infrasructure projects. The aim of the site is to provide every user with an understanding of the projects in terms of their aims, the planned start and finsih dates, the current project status, and a comparison of the budget and actual costs used in the projects.
 
-# Project Setup 
+# The Project Setup Instructions
+## The Project's Objectives
 
-Developing the project entailed writing code using three main languages, HTML, CSS and Javascript. The HTML code represented by the index.html file depicted a simplified structure and format of the webpage. this includes the headers, paragraphs and the navigation bars. The CSS language was used in styling the webpage such that the site has a strong appeal to its users. The Javascript code represented by the index.js file was used in making the site functional. A user is allowed to visit the site, read and search for particular information and even include their comments on the projects they were interested in. 
+- Develop a website that provides comprehensive information to the stakeholders on various public projects. 
+- Allow the users specifically project managers to provide updated progress reports on the projects. an abil
+
+## Introduction
+
+In this project, data is to be retrieved from a pubic API on the ongoing projects. the underling code is to pass functions into an event listener when called, send a 'fetch' request, then the data will be displayed after retrieval.
+
+
+## Scenario
+Imagine you are looking to build a frontend database that specializes in public projects. the initial step is seeking for information for an the website's API, creating the HTML code, styling with CSS and a achieving web functionality through Javascript. 
+
+
+## Getting Started
+
+The JSON server was first kept up an running through the `json-server --watch db.json` to see the API data collected. Then the heroku application was deployed in order to create a public API
+
+
+## Creating the HTML
+
+In `index.html`, the goal is creating a the basic webpage for the site. To this effect, the structure was mainly to have a title for the site, a description of what the site has, the projects and the respective information from the API. 
+
+Instead of having a hard-coded site, the code would make use of the ID and class selectors used in the styling with CSS and attaining functionality in Javascript.
+
+A Submit Form was also included in which the project managers could add information on the project and it will appear below it after clicking on Submit.
+
+The  primary task of getting ths form to work entaiked adding an event listener for capturing the form data and overriding its default behavior, fetching the data that the user has typed on the form and displaying the data on the page.
+
+## Styling through CSS
+this webpage was styled through CSS with the use of the ID and class selectors or other differenrt tags depending on how they appeared in the HTML code.
+
+## Creating the Javascript Code
+
+The JS code was mainly focussed on having functions that could capture user input and also customize the fetch requests from the public API. to display the retrieved data in the page, the HTML comprised of a `div` element with an id, `"projectNames"` which contained the filler information.
+
+All together, the project's code would be concluded in the `index.html`, `style.css` and `index.js` files.
+
+
+## Conclusion
+
+In this project, the main goal of capturing user input via event listeners, using `fetch` requests,
+and DOM manipulation, it became possible to update the webpage content as a user requests it. Although
+this won't be the case for all events, we also overrode HTML's default behavior.
+
 
 # The Link to the live site on GitHub Pages 
 
@@ -24,14 +67,5 @@ of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+furnished to do so.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

@@ -1,4 +1,4 @@
-//  document.addEventListener('DOMContentLoaded',() =>{
+// document.addEventListener('DOMContentLoaded',() =>{
 
 let itemOne = document.getElementById("item1")
 let itemTwo = document.getElementById("item2")
@@ -68,5 +68,4 @@ document.querySelector(".tabcontent").addEventListener("mouseenter", entering)
   function entering(ev){
     ev.currentTarget.style.color = "blue";
   }
- 
-//  })
+ // })
