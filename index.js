@@ -66,7 +66,7 @@ const form =document.getElementById("description-form")
 document.querySelector(".tabcontent").addEventListener("mouseenter", entering)
 
   function entering(ev){
-    ev.currentTarget.style.color = "red";
+    ev.currentTarget.style.color = "blue";
   }
  
 //  })
