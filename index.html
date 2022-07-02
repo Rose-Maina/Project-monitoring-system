@@ -1,100 +1,53 @@
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contractors' Progress Reports</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-  <body>
-    <header>
-      <h1>PUBLIC INFRASTRUCTURE MONITORING SYSTEM</h1>
-      <nav>
-        <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'kasaraniStadium', 'arrow4')">
-                  <i class="far fa-kasaraniStadium"></i>
-                  Kasarani_Stadium<span id="arrow4" class=" arrow fas fa-caret-right"></span>
-                </button>
-          
-              <button class="tablinks" onclick="openTab(event, 'cancerResearchInstitute', 'arrow1')" id="defaultOpen">
-                <i class="fab fa-cancerResearchInstitute"></i>
-                 Cancer_Research_Institute
-                 <span id="arrow1" class="arrow fas fa-caret-right"></span>
-                </button>
-        </div>
-          <div id="kasaraniStadium" class="tabcontent">
-            <h3>Current Progress On The Upcoming Kasarani Stadium</h3>
-            <img src = "assets/modern-stadium.jpg" alt="The Project's Goal"/>
-            <div id="stadium">
-              </div> 
-            </div>
-    
-          <div id="cancerResearchInstitute" class="tabcontent">
-            <h3>Progress Details On The Upcoming Cancer Research Institute</h3>
-            <img src = "assets/cancer-institute.jpg" alt="The Project's Goal"/>
-              <div id = "research"></div>
-          </div>
-        </div>
-      </nav>
-    </header>
-   <div>
-    <table class ="table"></table>
-      <thead></thead>
-      <tbody></tbody>
-   </div> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Public Infrastructure Monitoring System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header>
+        <h1>A PUBLIC INFRASTRUCTURE MONITORING SYSTEM</h1>
+        <p>A look Into The Progress Made In Public Infrastructure Projects</p>
+      </header>
+      
+        <div class="headers">
+                <div class="tab">
+                      <h1>Ongoing Projects</h1>
+                      <button id = "projectNames" class="tablinks" 
+                      onclick="openProject(event, 'projectNames', 'arrow4')">
+                      <i class="far fa-projectNames"></i>
+                        Project Name<span id="arrow4" class=" arrow fas fa-caret-right"></span>
+                      </button>
+                      <button id="myBtn">See More</button>
+               </div>
 
-   <div class="search">
-      <div class="icon"></div>
-      <div class="input"></div>
-        <input type="text" placeholder="Search" id="mysearch">
-   </div>
-   
-      <form id="description-form">
-        <label for="description">Edited Description:</label>
-        <textarea id="description"></textarea>
-        <button type="submit">Update Project</button>
-      </form>
+               <div class="tabcontent">
+                <h2 id="projectname">Project name goes here</h2>
+                <img id="image" src=" " alt="The Project's Goal"/>
+                <div class="jsonData">
+                  <p>The Information Below Gives the Dates Representing the Date In Which the Update was Made,
+                     the Planned Finish Dates and the Respective Project Status</p>
+                  <ul id="itemlist">
+                    <li id="item1">item1</li>
+                    <li id="item2">item 2</li>
+                    <li id="item3">item 3</li>
+                  </ul>
+                </div>
+              </div>
 
-      <h3>Customer Reviews</h3>
-      <ul id="review-list"></ul>
-    
-      <form id="review-form">
-        <label for="review">Your Review:</label>
-        <textarea id="review"></textarea>
-        <button type="submit">Add review</button>
-      </form>
-      <!-- <form id="review-form">
-      <label for="review">Your Review:</label>
-      <textarea id="review"></textarea>
-      <button type="submit">Add review</button>
-    </form> -->
 
-    <script>
-        function openTab(evt, Services, arrows) {
-            var i, tabcontent, tablinks, tabArrow;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            
-            tabArrow = document.getElementsByClassName("arrow");
-            for (i = 0; i < tabArrow.length; i++) {
-                tabArrow[i].style.display = "none";
-            }
-            
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            
-            document.getElementById(arrows).style.display = "block";
-            document.getElementById(Services).style.display = "block";
-            evt.currentTarget.className += " active";
-            
-            }
-            
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-
-    </script>
-  </body>
-  <script type="text/javascript" src="index.js"></script>
+                <form id="description-form">
+                  <label for="description">Add Progress Report</label>
+                  <textarea id="description"></textarea>
+                  <button type="submit">Submit</button>
+                </form>
+                <ul id="progress">
+               </ul>
+              
+        <script type="text/javascript" src="index.js"></script>
+    </head>      
+</body>
 </html>
