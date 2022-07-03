@@ -57,6 +57,9 @@ this won't be the case for all events, we also overrode HTML's default behavior.
 
 https://rose-maina.github.io/Project-monitoring-system/
 
+#Link to an illustration of the system
+https://drive.google.com/file/d/1Bj1NT49c2lWnaUs9KlfsmQtsAu6oDgkc/view
+
 # Copyright and License Information
 MIT License
 
